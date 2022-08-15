@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/seller.css">
+    <link rel="stylesheet" href="./css/signup.css">
+    <title>Seller Dashboard</title>
+</head>
+
+<body>
+    <img src="./img/loader.gif" class="loader" alt="loader_gif">
+
+    <div class="alert-box">
+        <img src="./img/error.png" class="alert-img" alt="error_img">
+        <p class="alert-msg">Error message</p>
+    </div>
+
+    <img src="./img/dark-logo.png" class="logo" alt="logo">
+
+    <!-- become seller element -->
+    <div class="become-seller hide ">
+        <p class="heading">become a seller</p>
+        <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima explicabo nobis veritatis,
+            deserunt ab nihil eveniet blanditiis non corrupti voluptatum hic velit sunt nisi molestiae enim ipsum odit
+            ullam. Voluptatem vero temporibus dolorum corporis veritatis adipisci! Repudiandae corrupti voluptatem
+            blanditiis eius provident distinctio, commodi enim esse temporibus quod, accusamus natus.
+        </p>
+        <button class="btn" id="apply-btn"> apply for seller account</button>
+    </div>
+
+    <!-- apply form -->
+    <div class="apply-form hide">
+
+        <input type="text" id="business-name" placeholder="business name / company name / shop name">
+        <textarea id="business-add" placeholder="address"></textarea>
+        <textarea id="about" placeholder="about"></textarea>
+        <input type="text" id="number" placeholder="number">
+        <input type="checkbox" checked class="checkbox" id="terms-and-conditions">
+        <label for="terms-and-conditions">agree to our <a href="">terms and conditions</a></label>
+        <br />
+        <input type="checkbox" checked class="checkbox" id="legitInfo">
+        <label for="legitInfo">all information is legit</label>
+        <button class="submit-btn" id="apply-form-btn"> apply</button>
+
+    </div>
+
+    <!-- products list -->
+    <div class="product-listing hide">
+        <div class="add-product">
+            <p class="add-product-title"> add product</p>
+            <button class="btn">add product</button>
+        </div>
+        <img src="./img/no-products.png" class="no-product-image" alt="">
+    </div>
+
+
+    <script src="./js/token.js"></script>
+    <script src="./js/seller.js"></script>
+</body>
+
+</html>

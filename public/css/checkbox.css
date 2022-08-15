@@ -1,0 +1,33 @@
+.checkbox{
+    -webkit-appearance: none !important;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #383838;
+    border-radius: 2px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.checkbox:checked {
+    background: #383838;
+}
+
+.checkbox::after {
+    content: '' !important;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url(../img/check.png) !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.checkbox:checked::after {
+    display: block;
+}

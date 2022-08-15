@@ -1,0 +1,110 @@
+section .search-results {
+    width: 100%;
+    padding: 60px 0;
+}
+
+h2.heading {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 40px;
+    padding: 60px 10vw;
+}
+
+h2.heading span {
+    font-weight: 700;
+
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+    row-gap: 40px;
+    margin-bottom: 56px;
+    /* margin-left: 10vw; */
+}
+section.search-results div.product-container {
+    padding: 0 10vw;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin-top: -16px;
+}
+
+section.search-results div.product-container::-webkit-scrollbar{
+    display: none;
+}
+section.search-results div.product-container div.product-card {
+    flex: 00 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+
+section.search-results div.product-container div.product-card div.product-image {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+img.product-thumb {
+    /* width: 100%; */
+    object-fit: cover;
+}
+
+span.discount-tag {
+    position: absolute;
+    background: #fff;
+    padding: 4px;
+    border-radius: 4px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+}
+
+button.card-btn {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 4px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+section.search-results div.product-container div.product-card:hover button.card-btn {
+    opacity: 1;
+}
+
+button.card-btn:hover {
+    background: #efefef;
+}
+
+section.search-results div.product-info {
+    width: 100%;
+    height: 100px;
+    padding-top: 12px;
+}
+
+section.search-results div.product-info h2.product-brand {
+    text-transform: uppercase;
+}
+
+section.search-results div.product-info p.product-short-desc {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 4px 0;
+}    

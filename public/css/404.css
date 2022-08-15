@@ -1,0 +1,15 @@
+img.four-0-four-image {
+    display: block;
+    margin: 60px auto;
+}
+
+p.four-0-four-msg {
+    text-transform: capitalize;
+    text-align: center;
+    color: #383838;
+}
+ p.four-0-four-msg a{
+    text-transform: capitalize;
+    text-align: center;
+    color: #383838;
+}
